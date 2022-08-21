@@ -1,0 +1,921 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* TODOS LOS H IGUALES */
+h2 {
+    text-align: center;
+    font-family: sneakers-pro, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    padding: 4vh;
+}
+
+h1 {
+    text-align: center;
+    font-family: sneakers-pro, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    padding: 2vh;
+}
+
+h3 {
+    text-align: center;
+    font-family: sneakers-pro, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    padding: 2vh;
+}
+
+/* header no index */
+
+.color__link {
+    color: #A6A6A6 ;
+    text-decoration: solid;
+}
+
+.header__portada {
+    display: grid;
+    grid-template-rows: 25vh;
+    grid-template-columns: 100%;
+}
+
+.imagen__portada {
+    display: flex;
+    justify-content: stretch;
+    align-content: stretch;
+    width: 100%;
+    height: 25vh;
+}
+
+.tabla__menu {
+    height: 5vh;
+    width: 100%;
+    border-width: 10px;
+    border-style: double;
+    border-color: #595959;
+    background-color: #262626;
+    font-family: sneakers-pro, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    position:sticky;
+    padding: 5px;
+}
+
+/* FOOTER IGUAL PARA TODOS */
+.footer__tamaño {
+    display: grid;
+    grid-template-rows: 10vh;
+    grid-template-columns: 100%;
+}
+
+.tabla__footer {
+    height: 10vh;
+    width: 100%;
+    border-width: 10px;
+    border-style: double;
+    border-color: #595959 ;
+    background-color: #A6A6A6;
+    display: flex;
+    justify-content:center; 
+    align-content: space-between;
+}
+
+.icono__wsp {
+    height: 5vh;
+    width: 5vh;
+}
+
+.icono__insta {
+    height: 5vh;
+    width: 5vh;  
+    
+}
+
+.text {
+    font-family: sneakers-pro, sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+}
+
+/* CSS INDEX */
+
+
+header {
+    display: grid;
+    grid-template-rows: 5vh ;
+    border-width: 10px;
+}
+    
+
+.main__index {
+    display: grid;
+    grid-template-rows: 95vh;
+}
+
+
+.imagen {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    width: 100%;
+    height: 95vh;
+}
+
+.tabla__menu__index {
+    height: 5vh;
+    width: 100%;
+    border-width: 10px;
+    border-style: double;
+    border-color: #595959;
+    background-color: #262626;
+    font-family: sneakers-pro, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    position:fixed;
+    padding: 5px;
+}
+/* CSS EQUIPO */
+
+
+
+.main__equipo {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5vh;
+  
+    background-color: #BFBFBF;
+}
+
+.img__barberos {
+width: 50vh;
+height: 50vh;
+}
+
+.nombres__barberos {
+    text-align: center;
+    font-family: sneakers-pro, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    padding: 2vh;
+}
+
+/* CSS GALERIA */
+
+
+
+.main__galeria {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh;
+    background-color: #BFBFBF;
+}
+.tabla__imagenes__galeria {
+display: flex;
+align-content: center;
+justify-content: center;
+}
+
+.img__cortes {
+    width: 30vh;
+    height: 30vh;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0D0D0D;
+    margin-bottom: 5vh;
+    }
+
+   /* CSS EVENTOS */
+
+.main__eventos {
+    display: grid;
+    grid-template-rows: 10vh;
+    grid-template-columns: 100%;
+    background-color: #BFBFBF;
+
+}
+
+.imagen__eventos {
+    height: 40vh;
+    width: 70vh;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0D0D0D;
+    margin-bottom: 5vh;
+    
+}
+.centrar__eventos {
+display: flex;
+align-content: center;
+justify-content: center;
+}
+
+.videos__eventos {
+    height: 40vh;
+    width: 71vh; 
+    margin-bottom: 5vh;  
+}
+
+/* CSS CONTACTO */
+.main__contacto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh;
+    background-color: #BFBFBF;
+}
+
+.centrar__contacto {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    }
+
+.mapa__posicion {
+height: 60vh;
+width: 60vh;
+}
+.centrar__lista {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5vh;
+    }
+
+/* full responsive */
+/* media queries index*/
+@media only screen and (max-width: 500px) 
+{
+    .footer__tamaño {
+        grid-template-rows: 10vh;
+        grid-template-columns: 100%;  
+    }
+    
+    .tabla__footer {
+        height: 10vh;
+        width: 100%;
+        border-width: 10px;
+    }
+    
+    .icono__wsp {
+        height: 4vh;
+        width: 4vh;
+    }
+    
+    .icono__insta {
+        height: 4vh;
+        width: 4vh;  
+        
+    }
+    
+    .text {
+        font-weight: 500; 
+    }  
+
+    header {
+        grid-template-rows: 5vh ;
+        border-width: 10px;
+    }
+        
+    
+    .main__index {
+        grid-template-rows: 95vh;
+    }
+    
+    
+    .imagen {
+        width: 100%;
+        height: 95vh;
+    }
+    
+    .tabla__menu__index {
+        height: 5vh;
+        width: 100%;
+        border-width: 10px;
+        font-weight: 500;
+        padding: 5px;
+        
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .footer__tamaño {
+        grid-template-rows: 10vh;
+        grid-template-columns: 100%;
+        
+    }
+    
+    .tabla__footer {
+        height: 10vh;
+        width: 100%;
+        border-width: 10px;
+    }
+    
+    .icono__wsp {
+        height: 4vh;
+        width: 4vh;
+    }
+    
+    .icono__insta {
+        height: 4vh;
+        width: 4vh;  
+        
+    }
+    
+    .text {
+        font-weight: 500; 
+    }  
+
+    header {
+        grid-template-rows: 5vh ;
+        border-width: 10px;
+    }
+        
+    
+    .main__index {
+        grid-template-rows: 95vh;
+    }
+    
+    
+    .imagen {
+        width: 100%;
+        height: 95vh;
+    }
+    
+    .tabla__menu__index {
+        height: 5vh;
+        width: 100%;
+        border-width: 10px;
+        font-weight: 500;
+        padding: 5px;
+    }
+
+}
+
+/* media queris equipo */
+
+@media only screen and (max-width: 500px) {
+  
+    .header__portada {
+        grid-template-rows: 25vh;
+        grid-template-columns: 100%;
+    }
+    
+    .imagen__portada {
+        width: 100%;
+        height: 25vh;
+    }
+    
+    .tabla__menu {
+        height: 5vh;
+        width: 100%;
+        border-width: 10px;
+        font-weight: 500;
+        padding: 5px;
+    }
+    
+    .footer__tamaño {
+        grid-template-rows: 10vh;
+        grid-template-columns: 100%;
+    }
+    
+    .tabla__footer {
+        height: 10vh;
+        width: 100%;
+        border-width: 10px;
+    }
+    
+    .icono__wsp {
+        height: 4vh;
+        width: 4vh;
+    }
+    
+    .icono__insta {
+        height: 4vh;
+        width: 4vh;  
+        
+    }
+    
+    .text {
+        font-weight: 500; 
+    }
+
+    .main__equipo {
+        grid-template-columns: 100%;
+        grid-template-rows: 5vh;
+    }
+    
+    .img__barberos {
+    width: 30vh;
+    height: 30vh;
+    }
+    
+    .nombres__barberos {
+        font-weight: 500;
+        padding: 2vh;
+    }
+    h2 {
+        font-weight: 500;
+        padding: 4vh;
+    }
+    
+    h1 {
+        font-weight: 500;
+        padding: 2vh;
+    }
+    
+    h3 {
+        font-weight: 500;
+        padding: 2vh;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header__portada {
+        grid-template-rows: 25vh;
+        grid-template-columns: 100%;
+    }
+    
+    .imagen__portada {
+        width: 100%;
+        height: 25vh;
+    }
+    
+    .tabla__menu {
+        height: 5vh;
+        width: 100%;
+        border-width: 10px;
+        font-weight: 500;
+        padding: 5px;
+    }
+    
+    .footer__tamaño {
+        grid-template-rows: 10vh;
+        grid-template-columns: 100%;
+    }
+    
+    .tabla__footer {
+        height: 10vh;
+        width: 100%;
+        border-width: 10px;
+    }
+    
+    .icono__wsp {
+        height: 4vh;
+        width: 4vh;
+    }
+    
+    .icono__insta {
+        height: 4vh;
+        width: 4vh;  
+        
+    }
+    
+    .text {
+        font-weight: 500; 
+    }
+
+    .main__equipo {
+        grid-template-columns: 100%;
+        grid-template-rows: 5vh;
+    }
+    
+    
+    .nombres__barberos {
+        font-weight: 500;
+        padding: 2vh;
+    }
+    h2 {
+        font-weight: 500;
+        padding: 4vh;
+    }
+    
+    h1 {
+        font-weight: 500;
+        padding: 2vh;
+    }
+    
+    h3 {
+        font-weight: 500;
+        padding: 2vh;
+    }
+}
+
+/* media queris galeria */
+
+@media only screen and (max-width: 500px) {
+
+    .header__portada {
+        grid-template-rows: 25vh;
+        grid-template-columns: 100%;
+    }
+    
+    .imagen__portada {
+        width: 100%;
+        height: 25vh;
+    }
+    
+    .tabla__menu {
+        height: 5vh;
+        width: 100%;
+        border-width: 10px;
+        font-weight: 500;
+        padding: 5px;
+    }
+    
+    .footer__tamaño {
+        grid-template-rows: 10vh;
+        grid-template-columns: 100%;
+    }
+    
+    .tabla__footer {
+        height: 10vh;
+        width: 100%;
+        border-width: 10px;
+    }
+    
+    .icono__wsp {
+        height: 4vh;
+        width: 4vh;
+    }
+    
+    .icono__insta {
+        height: 4vh;
+        width: 4vh;  
+        
+    }
+    
+    .text {
+        font-weight: 500; 
+    }
+    
+    .main__galeria {
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh;
+    }
+
+    .img__cortes {
+        width: 15vh;
+        height: 15vh;
+        border-width: 2px;
+        margin-bottom: 2vh;
+        }
+    
+        h2 {
+            font-weight: 500;
+            padding: 4vh;
+        }
+        
+        h1 {
+            font-weight: 500;
+            padding: 1vh;
+        }
+        
+        h3 {
+            font-weight: 500;
+            padding: 4vh;
+        }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .header__portada {
+        grid-template-rows: 25vh;
+        grid-template-columns: 100%;
+    }
+    
+    .imagen__portada {
+        width: 100%;
+        height: 25vh;
+    }
+    
+    .tabla__menu {
+        height: 5vh;
+        width: 100%;
+        border-width: 10px;
+        font-weight: 500;
+        padding: 5px;
+    }
+    
+    .footer__tamaño {
+        grid-template-rows: 10vh;
+        grid-template-columns: 100%;
+    }
+    
+    .tabla__footer {
+        height: 10vh;
+        width: 100%;
+        border-width: 10px;
+    }
+    
+    .icono__wsp {
+        height: 4vh;
+        width: 4vh;
+    }
+    
+    .icono__insta {
+        height: 4vh;
+        width: 4vh;  
+        
+    }
+    
+    .text {
+        font-weight: 500; 
+    }
+    
+    .main__galeria {
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh;
+    }
+
+   
+    
+        h2 {
+            font-weight: 500;
+            padding: 4vh;
+        }
+        
+        h1 {
+            font-weight: 500;
+            padding: 1vh;
+        }
+        
+        h3 {
+            font-weight: 500;
+            padding: 4vh;
+        }
+
+}
+
+/* media queris eventos */
+
+@media only screen and (max-width: 500px) {
+    h2 {
+        font-weight: 500;
+        padding: 4vh;
+    }
+    
+    h1 {
+        font-weight: 500;
+        padding: 2vh;
+    }
+    
+    h3 {
+        font-weight: 500;
+        padding: 2vh;
+    }
+     
+    .header__portada {
+        grid-template-rows: 25vh;
+        grid-template-columns: 100%;
+    }
+    
+    .imagen__portada {
+        width: 100%;
+        height: 25vh;
+    }
+    
+    .tabla__menu {
+        height: 5vh;
+        width: 100%;
+        border-width: 10px;
+        font-weight: 500;
+        padding: 5px;
+    }
+    
+    .footer__tamaño {
+        grid-template-rows: 10vh;
+        grid-template-columns: 100%;
+    }
+    
+    .tabla__footer {
+        height: 10vh;
+        width: 100%;
+        border-width: 10px;
+    }
+    
+    .icono__wsp {
+        height: 4vh;
+        width: 4vh;
+    }
+    
+    .icono__insta {
+        height: 4vh;
+        width: 4vh;  
+        
+    }
+    
+    .text {
+        font-family: sneakers-pro, sans-serif;
+        font-style: normal;
+        font-weight: 500; 
+    }
+   
+    .main__eventos {
+        grid-template-rows: 10vh;
+        grid-template-columns: 100%;
+    }
+    
+    .imagen__eventos {
+        height: 40vh;
+        width: 450px;
+        border-width: 2px;
+        margin-bottom: 5vh;
+        
+    }
+    .videos__eventos {
+        height: 40vh;
+        width: 450px; 
+        margin-bottom: 5vh;  
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    h2 {
+        font-weight: 500;
+        padding: 4vh;
+    }
+    
+    h1 {
+        font-weight: 500;
+        padding: 2vh;
+    }
+    
+    h3 {
+        font-weight: 500;
+        padding: 2vh;
+    }
+    
+    .header__portada {
+        grid-template-rows: 25vh;
+        grid-template-columns: 100%;
+    }
+    
+    .imagen__portada {
+        width: 100%;
+        height: 25vh;
+    }
+    
+    .tabla__menu {
+        height: 5vh;
+        width: 100%;
+        border-width: 10px;
+        font-weight: 500;
+        padding: 5px;
+    }
+    
+    .footer__tamaño {
+        grid-template-rows: 10vh;
+        grid-template-columns: 100%;
+    }
+    
+    .tabla__footer {
+        height: 10vh;
+        width: 100%;
+        border-width: 10px;
+    }
+    
+    .icono__wsp {
+        height: 4vh;
+        width: 4vh;
+    }
+    
+    .icono__insta {
+        height: 4vh;
+        width: 4vh;  
+        
+    }
+    
+    .text {
+        font-weight: 500; 
+    }
+    
+    .main__eventos {
+        grid-template-rows: 10vh;
+        grid-template-columns: 100%;
+    }
+}
+
+/* media queris contacto */
+
+@media only screen and (max-width: 500px) {
+
+.header__portada {
+    grid-template-rows: 25vh;
+    grid-template-columns: 100%;
+}
+
+.imagen__portada {
+    width: 100%;
+    height: 25vh;
+}
+
+.tabla__menu {
+    height: 5vh;
+    width: 100%;
+    border-width: 10px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.footer__tamaño {
+    grid-template-rows: 10vh;
+    grid-template-columns: 100%;
+}
+
+.tabla__footer {
+    height: 10vh;
+    width: 100%;
+    border-width: 10px;
+}
+
+.icono__wsp {
+    height: 4vh;
+    width: 4vh;
+}
+
+.icono__insta {
+    height: 4vh;
+    width: 4vh;  
+    
+}
+
+.text {
+    font-weight: 500; 
+}
+
+.main__contacto {
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh;
+}
+
+.mapa__posicion {
+height: 400px;
+width: 400px;
+}
+.centrar__lista {
+    margin-bottom: 5vh;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .header__portada {
+    grid-template-rows: 25vh;
+    grid-template-columns: 100%;
+}
+
+.imagen__portada {
+    width: 100%;
+    height: 25vh;
+}
+
+.tabla__menu {
+    height: 5vh;
+    width: 100%;
+    border-width: 10px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.footer__tamaño {
+    grid-template-rows: 10vh;
+    grid-template-columns: 100%;
+}
+
+.tabla__footer {
+    height: 10vh;
+    width: 100%;
+    border-width: 10px;
+}
+
+.icono__wsp {
+    height: 4vh;
+    width: 4vh;
+}
+
+.icono__insta {
+    height: 4vh;
+    width: 4vh;  
+    
+}
+
+.text {
+    font-weight: 500; 
+}
+
+.main__contacto {
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh;
+}
+
+.centrar__lista {
+    margin-bottom: 5vh;
+    }
+
+}
