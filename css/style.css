@@ -59,13 +59,13 @@ h3 {
     height: 25vh;
 }
 
-.ul_no_index {
+.ul__no__index {
     height: 5vh;
     width: 100%;
     border-width: 10px;
     border-style: double;
-    border-color: #595959;
-    background-color: #262626;
+    border-color: black;
+    background-color: rgb(148, 145, 145);
     font-family: sneakers-pro, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -74,6 +74,12 @@ h3 {
     display: flex;
     align-content: center;
     justify-content: center;
+    transition: all 2s;
+}
+
+.ul__no__index:hover {
+    border-color: #595959;
+    background-color: #262626;
 }
 
 .li__no__index {
